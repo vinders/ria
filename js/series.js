@@ -152,12 +152,12 @@
 							planningResult[i].banner = localList[j].banner;
 							
 							switch(filterSeen) {
-								case '0' :	if( ( reqSeason === localSeason && reqEpisode === localEpisode ) || ( reqSeason === localSeason && reqEpisode === ( localEpisode + 1 ) ) || ( reqSeason === ( localSeason + 1 ) && localEpisode === localList[j].nbmax && reqEpisode === 1 ) ) {
+								case '0' :	if( ( reqSeason === localSeason && reqEpisode === localEpisode + 1 ) || ( reqSeason === ( localSeason + 1 ) && localEpisode === localList[j].nbmax && reqEpisode === 1 ) ) {
 												swap.push( planningResult[i] );
 												++localList[j].episode;
 											}
 											break;
-								case '1' :	if( ( reqSeason === localSeason && reqEpisode >= localEpisode ) || ( reqSeason > localSeason ) ) {
+								case '1' :	if( ( reqSeason === localSeason && reqEpisode > localEpisode ) || ( reqSeason > localSeason ) ) {
 												swap.push( planningResult[i] );
 											}
 											break;
