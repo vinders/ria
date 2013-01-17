@@ -410,6 +410,8 @@
 			season = idSplit[1],
 			episode = idSplit[2],
 			nbmax = $( this ).parent().find( 'li' ).length,
+			seasonIndex = parseInt( season, 10 ) + 1,
+			episodeIndex = parseInt( episode, 10 ) + 1,
 			$currentSeason =  $( '#' + show + ' .season' ),
 			$currentEpisode =  $( '#' + show + ' .episode' ),
 			localData;
@@ -419,11 +421,11 @@
 		$( '#' + show + ' .currentEpisode' ).removeAttr( 'class' );
 		$( this ).parent().parent().find( 'h3' ).attr( 'class', 'currentSeason' );
 		$( this ).attr( 'class', 'currentEpisode' );
-		$currentSeason.text( ( parseInt( season, 10 ) + 1 ).toString() );
-		$currentEpisode.text( ( parseInt( episode, 10 ) + 1 ).toString() );
+		$currentSeason.text( ( seasonIndex ).toString() );
+		$currentEpisode.text( ( episodeIndex ).toString() );
 		localData = localList[parseInt( show.substr( 4 ), 10 ) - 1];
-		localData.season = parseInt( season, 10 ) + 1;
-		localData.episode = parseInt( episode, 10 ) + 1;
+		localData.season = seasonIndex;
+		localData.episode = episodeIndex;
 		localData.nbmax = nbmax;
 		window.localStorage.setItem( 'shows', JSON.stringify( localList ) );
 		
