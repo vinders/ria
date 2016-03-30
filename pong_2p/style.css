@@ -1,0 +1,22 @@
+body
+{
+	width: 400px;
+	margin: 20px auto 0;
+}
+p
+{
+	background-color: #FFCCAA;
+	font:18px "arial",sans-serif;
+	padding: 10px;
+	margin: 0;
+}
+p+p+p
+{
+	background-color: white;
+	color:black;
+	font: 14px/2 "arial",sans-serif;
+}
+p span
+{
+	color: navy;
+}

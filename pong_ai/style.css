@@ -1,0 +1,128 @@
+body
+{
+margin: 50px auto 0;
+width: 600px;
+height:460px;
+border: 2px solid black;
+background-color: gray;
+}
+div#dial
+{
+width: 600px;
+height: 428px;
+background-color: #BBBBBB;/*#444444;*/
+font: 16px/1.5 "Courier New",monospace;
+color: black;/*white;*/
+position: absolute;
+text-align: center;
+z-index:3;
+}
+	#dial h2
+	{
+		border: 2px solid #777777;
+		margin: 2px 2px 40px;
+		padding: 15px 0;
+		font-weight: bold;
+	}
+	#dial p
+	{
+		text-align: left;
+		margin-left: 40px;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+		#dial p span
+		{
+			color: navy;
+		}
+	#dial input
+	{
+		height: 60px;
+		width: 180px;
+	}
+	#dial #sound
+	{
+		margin-left: 104px;
+		float: left;
+	}
+	#dial label
+	{
+		height: 60px;
+		position: relative;
+		top: 20px;
+		left: -130px;
+	}
+	#dial #easy
+	{
+		font: 25px "Courier New",monospace;
+		font-weight: bold;
+		/*background-color: green;*/
+		color: green;/*white;*/
+		border-top: 2px solid white;
+		border-left: 2px solid white;
+		border-bottom: 2px solid gray;
+		border-right: 2px solid gray;
+	}
+	#dial #medium
+	{
+		font: 25px "Courier New",monospace;
+		font-weight: bold;
+		/*background-color: #2222DD;*/
+		color: #2222DD;/*white;*/
+		border-top: 2px solid white;
+		border-left: 2px solid white;
+		border-bottom: 2px solid gray;
+		border-right: 2px solid gray;
+	}
+	#dial #hard
+	{
+		font: 25px "Courier New",monospace;
+		font-weight: bold;
+		/*background-color: #CC2222;*/
+		color: #CC2222;/*white;*/
+		border-top: 2px solid white;
+		border-left: 2px solid white;
+		border-bottom: 2px solid gray;
+		border-right: 2px solid gray;
+	}
+	
+h1
+{
+	background-color: navy;
+	color: #CCCCDD;
+	height: 30px;
+	margin: 0;
+	border-bottom: 2px solid black;
+	font: 20px/1.5 "Courier",monospace;
+	padding-left: 20px;
+}
+	h1 a
+	{
+		font: 18px/1.5 "arial",sans-serif;
+		text-decoration: none;
+		color: white;
+		float:right;
+		margin-right: 8px;
+		font-weight: bold;
+	}
+
+section
+{
+	background-color: navy;
+	position: absolute;
+	top: 484px;
+	z-index:0;
+	height: 28px;
+	width: 600px;
+}
+section p
+{
+	display: inline-block;
+	color: white;
+	margin: 0 0 0 100px;
+	font: 14px/2 "Courier",monospace;
+}
+section p:first-child
+{
+	margin-right: 90px;
+}
